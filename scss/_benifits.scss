@@ -1,16 +1,109 @@
-.Benefits_box{
-    background: #E0EFF6;
-    width: 100%;
-    height: 300px;
-}
-.Benefits_box{
+.benefits {
+  background: #e0eff6;
+  margin-bottom: 100px;
+  &_box {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 150px;
     gap: 104px;
-}
-.benefits--text_h3{
-    text-align: center
+  }
 
+  &__item {
+    margin-bottom: 104px;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 85px;
+
+    color: #07484a;
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__texts {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 0px;
+    gap: 32px;
+  }
+  &__text__strong {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 48px;
+    /* identical to box height */
+
+    color: #07484a;
+  }
+  &__text__p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #07484a;
+  }
+  &__img__arrangement1 {
+    width: 108px;
+    height: 108px;
+
+    background: #eeebff;
+    border-radius: 24px;
+    padding: 20px;
+  }
+  &__img__arrangement2 {
+    width: 108px;
+    height: 108px;
+
+    background: #FFF4E7;
+    border-radius: 24px;
+    padding: 20px;
+  }
+  &__img__arrangement3 {
+    width: 108px;
+    height: 108px;
+
+    background: #CAF3E5;
+    border-radius: 24px;
+    padding: 20px;
+  }
+  @media(max-width:990px){
+    &__text__strong{
+        font-size: 24px;
+    }
+    &__text__p{
+        font-size: 18px;
+    }
+    &__item{
+        font-size: 48px;
+    }
 }
+@media(max-width:768px){
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+      &__texts {
+         width: 320px;
+         margin-bottom: 50px;
+      }
+      &__item{
+        font-size: 28px;
+    }
+}
+}
+

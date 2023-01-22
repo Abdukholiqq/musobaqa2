@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Battle.2023</title>
   </head>
@@ -97,10 +101,15 @@
 
 
     <main>
-        <section class="explore"></section>
-        <section class="popular"></section>
-        <section class="special"></section>
-        <section class="slider"></section>
+      <section class="explore">
+        <h5>Explore by Category</h5>
+        <div class="explore__left">
+          <input type="search" name="search" id="search" placeholder="Search" />
+          <div class="explore__scroll"><h3>Bedroom</h3></div>
+          <button>All Categories </button>
+        </div>
+        <div class="explore__right"></div>
+      </section>
 
 
 
@@ -141,6 +150,7 @@
 
 
 
+      <section class="popular"></section>
 
 
 
@@ -182,6 +192,7 @@
 
 
 
+      <section class="special"></section>
 
 
 
@@ -223,6 +234,7 @@
 
 
 
+      <section class="slider"></section>
 
 
 
@@ -264,6 +276,7 @@
 
 
 
+      <section class="benifits"></section>
 
 
 
@@ -305,6 +318,7 @@
 
 
 
+      <section class="testimonials"></section>
 
 
 
@@ -346,6 +360,7 @@
 
 
 
+      <section class="joinOur"></section>
 
 
 
@@ -385,59 +400,93 @@
 
 
 
+      <section class="benefits">
+        <div class="container">
+        <div class="benefits__box">
+          <h3 class="benefits__item">Benefits for your expediency</h3>
+          <div class="benefits__card">
+            <div class="benefits__texts">
+              <div class="benefits__img__arrangement1">
+                <img src="./images/arrangement.svg" alt="loga">
+              </div>
+              <strong class="benefits__text__strong">Payment Method</strong>
+              <p class="benefits__text__p">We offer flexible payment
+                options, to make easier.</p>
+            </div>
 
+            <div class="benefits__texts">
+              <div class="benefits__img__arrangement2">
+                <img src="./images/cash.svg" alt="loga">
+              </div>
+              <strong class="benefits__text__strong">Return policy</strong>
+              <p class="benefits__text__p">You can return a product 
+                within 30 days.</p>
+            </div>
 
+            <div class="benefits__texts">
+              <div class="benefits__img__arrangement3">
+                <img src="./images/spiccer.png" alt="loga">
+              </div>
+              <strong class="benefits__text__strong">Customer Support</strong>
+              <p class="benefits__text__p">Our customer support 
+                is 24/7.</p>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+        
+              <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        
+          <!-- Initialize Swiper -->
+          <script>
+        
+          </script>
+        
+      </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <section class="benifits">
-          <div class="Benefits_box container">
-            <h3 class="benefits--text_h3">Benefits for your expediency</h3>
-            <div class="benefits_cart">
-              <div class="benefits_itim"></div>
-      
+      <section class="testimonials container">
+        <h3 class="testimonials__text__h3">Testimonials</h3>
+        <p class="testimonials__text__p">Over 15,000 happy customers.</p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+              <img src="images/header1024.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/header1024.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/header1024.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/header1024.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/header1024.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/header1024.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/header1024.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/header1024.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/header1024.png" />
             </div>
           </div>
-          
-                <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-          
-            <!-- Initialize Swiper -->
-            <script>
-          
-            </script>
-          
-        </section>
-        <section class="testimonials"></section>
-        <section class="joinOur"></section>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="joinOur"></section>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script src="./main.js"></script>
     </main>
   </body>
 </html>
