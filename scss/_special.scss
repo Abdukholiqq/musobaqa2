@@ -1,0 +1,138 @@
+.special {
+  margin-top: 100px;
+
+  &__div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__item {
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 96px;
+    color: #07484a;
+  }
+
+  &__both {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    margin-top: 32px;
+    margin-bottom: 21px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #07484a;
+  }
+  &__text {
+    margin-top: 21px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: #07484a;
+  }
+  &__btn {
+    padding: 20px 24px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fdfbf8;
+    background: #70908b;
+    border-radius: 10px;
+  }
+
+  &__list {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: #07484a;
+    margin-bottom: 20px;
+  }
+  &__paragraph {
+    margin-bottom: 25px;
+    width: 500px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: #07484a;
+  }
+  &__car {
+    display: flex;
+    gap: 15px;
+  }
+  &__cardd {
+    margin-bottom: 35px;
+  }
+  &__carddd {
+    display: flex;
+  }
+  &__title {
+    width: 195px;
+    margin-bottom: 15px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: #07484a;
+  }
+  &__href {
+    margin-top: 15px;
+    max-width: 295px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: #07484a;
+  }
+  .href {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: #07484a;
+  }
+}
+
+@media only screen and(max-width:1500px) {
+  .special {
+    &__left {
+      display: flex;
+      gap: 10px;
+    }
+    &__both {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__div {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
