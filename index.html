@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Battle.2023</title>
@@ -221,7 +222,40 @@
         </div>
       </section>
 
-      <section class="slider"></section>
+      <section class="slider">
+      <div class="swiper__box">
+
+  <div class="own__cart">
+     <strong class="own_text_strong">
+      Our <br>
+Own Creation
+     </strong>
+     <p class="own_text_p">Designed in our studio</p>
+     <div class="own_next_prev">
+      <div>
+        <a href="."><img src="images/pag-circle.svg" alt=""></a>
+        <a href="."><img src="images/pag-circle-left.svg" alt=""></a>
+      </div>
+     </div>
+  </div>
+ <div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+</div>
+      </section>
 
       <section class="benifits"></section>
 
@@ -274,5 +308,23 @@
         </div>
         <p class="p">Copyright ©2020 INWOOD. All Rights Reserved</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 3,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+},
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+},
+});
+    </script>
   </body>
 </html>
