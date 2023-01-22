@@ -4,8 +4,15 @@
   padding: 0;
 }
 .container {
-  max-width: 1620px;
+  max-width: 1350px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
