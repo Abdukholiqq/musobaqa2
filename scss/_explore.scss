@@ -1,3 +1,73 @@
-.explore{
-    background-color: aqua; 
+.explore {
+  //   background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  margin-top: 240px;
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #70908b;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #70908b;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+  &__data {
+    display: flex;
+    margin-top: 100.5px;
+    gap: 60px;
+  }
+  &__left {
+    button {
+      display: flex;
+      padding: 20px 32px;
+      background: #70908b;
+      border-radius: 10px;
+      align-items: center;
+      gap: 5px;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      color: #fff;
+      border: none;
+    }
+  }
+  &__scroll {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+
+    margin: 80px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 80px;
+    max-height: 349px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  &__right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+  }
+  #search {
+    padding: 26px 32px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    border: none;
+  }
 }
