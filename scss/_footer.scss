@@ -1,0 +1,42 @@
+footer{
+.footer{
+display: flex;
+justify-content: space-between; 
+.icons{
+    display: flex;
+    margin-top: 30px;
+    gap: 36px;
+}
+&__Abautt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   h5{
+    margin-bottom: 30px;
+   }
+   .h5{
+    margin: 0;
+   }
+} 
+
+}
+.p{
+    margin-top: 69px;
+}
+}
+@media only screen and (max-width:768px) {
+ footer{
+   .footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .linkss{
+        width: 100%;
+    }
+    .tablett{
+        width: 50%;
+        margin-top: 50px;
+    }
+   } 
+ }   
+}
